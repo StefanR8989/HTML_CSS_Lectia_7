@@ -18,7 +18,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -95,20 +95,39 @@ a {
 
 /* Hero section style */
 
+/* background: rgba(25, 28m 38, 0.2) */
+
 .hero-section {
-  background-color: #303030;
   height: 100vh;
   display: flex;
   align-items: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(25, 28, 38, 0.3),
+      rgba(25, 28, 38, 0.8)
+    ),
+    url(/img/hero-bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .hero-section__subtitle {
   font-size: 11px;
-  font-family: var(--primaryfont);
   font-weight: 600;
   line-height: 14px;
   color: var(--light-dark);
   margin-bottom: 20px;
+}
+
+.hero-section__subtitle::before {
+  content: '';
+  width: 80px;
+  height: 2px;
+  background-color: var(--light-dark);
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
 }
 
 .hero-section__title {
@@ -149,6 +168,16 @@ a {
   color: var(--black);
   margin-bottom: 20px;
   letter-spacing: 0.1em;
+}
+
+.about__subtitle::before {
+  content: '';
+  width: 80px;
+  height: 2px;
+  background-color: var(--black);
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
 }
 
 .about__images {
@@ -199,19 +228,25 @@ a {
   color: var(--black);
 }
 
+/* Services section */
+
 .services {
   background-color: var(--black);
+  background-image: radial-gradient(
+      circle at bottom left,
+      rgba(255, 108, 0, 0.2),
+      rgba(255, 108, 0, 0.3)
+    ),
+    url(/img/contact-bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--light-dark);
   padding-top: 130px;
   padding-bottom: 130px;
 }
 
-/* .services .container{} */
-/* display: flex; */
-
-.service__container {
+.services .container {
   display: flex;
-  padding: 28px 38px;
 }
 
 .services__subtitle {
@@ -223,7 +258,7 @@ a {
   margin-bottom: 20px;
 }
 
-.service__title {
+.services__title {
   font-family: var(--secondaryfont);
   font-size: 47px;
   font-weight: 700;
@@ -233,8 +268,63 @@ a {
 }
 
 .services__list {
+  padding: 28px 38px;
   flex: 1;
-  background: linear-gradient 180deg;
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2))
+    100%;
+}
+
+.services__item {
+}
+
+.services__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.services__button {
+  margin-top: 48px;
+  font-family: var(--primaryfont);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: transparent;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--orange);
+}
+
+.services__button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border: 1px solid var(--orange);
+}
+
+.services__button:focus {
+  background-color: var(--orange);
+  color: var(--white);
+  border: 1px solid var(--orange);
+}
+
+/* Barbers */
+
+.barbers__card {
+  background-color: var(--white);
+  box-shadow: 0px 2px 1px 0px #00000033;
+
+  box-shadow: 0px 1px 1px 0px #00000024;
+
+  box-shadow: 0px 1px 3px 0px #0000001f;
 }
 
 .container {
