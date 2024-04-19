@@ -1,0 +1,251 @@
+:root {
+  --orange: #ff6c00;
+  --white: #ffffff;
+  --light-dark: #9da4bd;
+  --black: #303030;
+  --primaryfont: 'Open sans', sans-serif;
+  --secondaryfont: 'Raleway', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary);
+}
+
+img{
+    display: block;
+    max width: 100%;
+    height: auto;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a  {
+    
+}
+
+/* Header section style*/
+
+.header {
+padding-top: 30px ;
+margin-bottom: -86px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: inherit;
+ }
+
+.header__logo{
+    background-color: var(--white);
+}
+
+.header__navigation ul {
+list-style: none;
+display: flex;
+gap: 40px;
+}
+
+.header__navigation a {
+text-decoration: none;
+font-family: --white;
+font-weight: 700;   
+font-size: 12px;
+line-height: 16px;
+color: var(--white);
+}
+
+.header__navigation a:hover {
+    color: var(--orange);
+}
+
+.header__info a {
+text-decoration: none;
+font-family: var(--white);
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+color: var(--white);
+}
+
+.button {
+font-family: var(--white);
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+background-color: transparent;
+color: var(--white);
+text-transform: uppercase;
+padding: 12px 24px;
+border: 1px solid var(--orange);
+border-radius: 25px;
+}
+
+.button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+/* Hero section style */
+
+.hero-section{
+    background-color: #303030;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-section__subtitle{
+    font-size: 11px;
+    font-family: var(--primary);
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--light-dark);
+    margin-bottom: 20px;
+}
+
+.hero-section__title {
+    font-family: var(--secondary);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 84px;
+    color: var(--white);
+        margin-bottom: 20px;
+
+}
+
+.hero-section__text{
+    font-size: 18px;
+    font-family: var(--primary);
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--light-dark);
+}
+
+/* About section style */
+
+.about{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.about .container{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}   
+
+.about__subtitle{
+    font-size: 11px;
+    font-family: var(--primary);
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--black);
+    margin-bottom: 20px;
+        letter-spacing: 0.1em; 
+}
+
+.about__images {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+
+.about__info{
+    flex: 1;
+}
+
+.about__image{
+    width: 270px;
+    height: 445px;
+}
+
+.about__title{
+    font-family: var(--secondary);
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.about__text{
+    font-size: 18px;
+    font-family: var(--primary);
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--black);
+        letter-spacing: 0.02em; 
+
+    }
+
+.about__text-smaller{
+     font-size: 14px;
+    font-family: var(--primary);
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--black);
+    /* margin-bottom: 20px; */
+    letter-spacing: 0.02em; 
+}
+
+.about__button{
+    margin-top: 40px;
+    color: var(--black);
+}
+
+.services {
+background-color: var(--black);
+color: var(--light-dark);
+padding-top: 130px;
+padding-bottom: 130px;
+}
+
+/* .services .container{} */
+    display: flex;
+
+.service__container{
+    display: flex;
+    padding: 28px 38px;
+}
+
+.services__subtitle{
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 14px;
+    color: var(--light-dark);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.service__title{
+    font-family: var(--secondaryfont);
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 50px;
+    color: var(--white);
+    margin-bottom: 46px;
+}
+
+.services__list{
+    flex: 1;
+    background: linear-gradient(180deg);
+}
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
